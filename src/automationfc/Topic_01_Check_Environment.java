@@ -34,11 +34,11 @@ public class Topic_01_Check_Environment {
 		Assert.assertEquals(loginPageTitle, "Guru99 Bank Home Page");
 	}
 	
-	@Test
-	public void TC_03_LoginFormDisplayed() {
+	//@Test
+	//public void TC_03_LoginFormDisplayed() {
 		//Login Form Displayed
-		Assert.assertTrue(driver.findElement(By.xpath("//form[@name='frmLogin']")).isDisplayed());
-	}
+		//Assert.assertTrue(driver.findElement(By.xpath("//form[@name='frmLogin']")).isDisplayed());
+	//}
 	
 	@AfterClass
 	public void afterClass() {
