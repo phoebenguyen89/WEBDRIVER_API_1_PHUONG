@@ -17,21 +17,21 @@ public class Topic_01_Check_Environment {
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get("http://demo.guru99.com/v4/");
+		driver.get("https://automationfc.com/");
 	}
 	
 	@Test
 	public void TC_01_ValidatePageUrl() {
 		//Login Page Url matching
 		String loginPageUrl = driver.getCurrentUrl();
-		Assert.assertEquals(loginPageUrl, "http://demo.guru99.com/v4/");
+		Assert.assertEquals(loginPageUrl, "https://automationfc.com/");
 	}
 	
-	//@Test
-	//public void TC_02_ValidatePageTitle() {
-		////Login Page Title
-		//String loginPageTitle = driver.getCurrentUrl();
-		//Assert.assertEquals(loginPageTitle, "Guru99 Bank Home Page");
+	@Test
+	public void TC_02_ValidatePageTitle() {
+		Login Page Title
+		String loginPageTitle = driver.getCurrentUrl();
+		Assert.assertEquals(loginPageTitle, "AUTOMATION FC BLOG");
 	}
 	
 	//@Test
